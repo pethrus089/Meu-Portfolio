@@ -1,4 +1,4 @@
-// Definir função que atualiza as dimensões da tela
+// Definir funÃ§Ã£o que atualiza as dimensÃµes da tela
 
 const div = window.document.getElementsByTagName('div')
 
@@ -21,19 +21,18 @@ function atualizarDimensoes() {
         a[1].style.float ='center'
         a[2].style.float ='center'
         a[3].style.float ='center'
-        a[4].style.float ='center'
-        h2.style.textAlign='lefth'
-        section.style.display='block'
+        h2.style.textAlign='center'
+        //section.style.display='block'
         
-        console.log(a)
+        //console.log(a)
     } else {
-        p.innerText = 'Sou iniciante no mercado de trabalho. Busco uma oportunidade front-end. Tenho experiencia na aréa de analise de sistemas na empresa Dia distribuição e importação afogados.'
+        p.innerText = 'Sou iniciante no mercado de trabalho. Busco uma oportunidade front-end.'
         header.classList.remove('pequeno')
-        h2.style.textAlign='left'
+        h2.style.textAlign='center'
         a[0].style.display ='block'
     }
 
 }
 
-// Chamar a função quando a janela é redimensionada
+// Chamar a funÃ§Ã£o quando a janela Ã© redimensionada
 window.addEventListener("resize", atualizarDimensoes);

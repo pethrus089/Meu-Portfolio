@@ -1,16 +1,17 @@
 const nav = window.document.getElementsByTagName('nav')[0]
-console.log(window.document.getElementsByTagName('nav'))
-const topoNav = nav.offsetTop;
-console.log(nav.offsetTop)
 
-console.log(topoNav)
+const topoNav = nav.offsetTop;
+
+
+
 
 window.onscroll=function(){
     fixarMenuNoTopo();
+    
 }
 
 function fixarMenuNoTopo(){
-    if(window.pageYOffset >= topoNav){
+    if(window.pageYOffset >= 486){
         nav.classList.add('FixoNotTopo');
     }else{
         nav.classList.remove('FixoNotTopo');

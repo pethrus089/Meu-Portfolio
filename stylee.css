@@ -1,0 +1,218 @@
+body {
+  margin: 0 0 0 0;
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace
+}
+#darkMode{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 14px;
+}
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.toggle input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .slider {
+  background-color: #010101;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+
+.grande {
+  /* background-color: #463f2dcf; */
+  background: url("imagens/fundo.png") #000000bc top center;
+  background-size: cover;
+  color: #fafae3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pequeno {
+  background-color: #6666662b;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  padding: 70px;
+}
+
+header div {
+  text-align: center;
+}
+
+header img {
+  margin: 20px;
+  width: 180px;
+  height: 180px;
+  border: 9px solid rgba(0, 0, 0, 0.195);
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+header div h2 {
+  max-width: 500px;
+  text-align: center;
+}
+
+header div p {
+  max-width: 400px;
+  text-align: center;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #ffffffdc;
+  width: 100%;
+  box-shadow: 2px 2px 4px rgba(96, 96, 96, 0.403);
+  border-radius: 3px;
+  display: block;
+  border-color: #a9a8a866;
+
+}
+
+nav a {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+  font-size: 0.9rem;
+
+}
+
+nav a:first-child {
+  float: left;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #acacac;
+
+}
+
+nav a.ativo {
+  background-color: #800;
+  color: #fff;
+}
+
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.principal a{
+  text-decoration: none;
+  color: #000000;
+
+}
+
+.FixoNotTopo {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.FixoNotTopo+.principal {
+  padding-top: 60px;
+}
+
+p {
+  text-align: justify;
+}
+
+.direito {
+
+  text-align: right;
+  padding: 15px;
+  display: block;
+}
+
+.esquerdo {
+  font-size: 18px;
+  text-align: left;
+  padding: 15px;
+  display: block;
+  max-width: 500px;
+}
+
+#apresentacao {
+  text-align: center;
+  padding: 50px 150px;
+}
+
+h2{
+  text-align: center;
+}
+.tec{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  word-break: break-all;
+  font-size: medium;
+  width: 100%;
+}
+.tecnologias{
+  text-align: center;
+  padding: 20px;
+}
+.tecnologias p{
+  width: 250px;
+}
+#primeiro{
+padding: 4%  10%;}
+#primeiro p{
+  text-align: center;
+}
+footer{
+  background-color: #232323;
+  color: rgb(201, 201, 201);
+  padding: 2px;
+}
+.listaContatos{
+  list-style: none;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(201, 201, 201);
+}
