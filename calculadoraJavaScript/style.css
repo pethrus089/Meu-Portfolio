@@ -1,26 +1,29 @@
 body{
     background-color: #013d22d2 ;
-    color: rgb(0, 0, 0);
+    color:  rgb(216, 216, 216);
     text-align: center;
 }
 #calculadora{
-    width: 20%;
-    height: 480px;
-    background-color: rgba(128, 128, 128, 0.342);
+    width: 270px;
+    height: 430px;
+    background-color: rgba(38, 46, 52, 0.83);
     margin: auto;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
 }
 #tela{
     height: 120px;
-    width: 300px;
-    background-color: rgba(37, 153, 28, 0.83);
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.83);
     border-radius: 20px;
-    margin: auto;
+    margin: 0 0 0 0;
     text-align: right;
     font-size: 50px;
     overflow: hidden;
+    color:  rgb(201, 201, 201);
 
 }
 #botoes{
@@ -29,20 +32,110 @@ body{
     padding-right: 0%;
     padding-top: 35px;
     text-align: center;
-    margin: 1px;
 }
 #tabela{
     margin: auto;
     text-align: center;
-    border-spacing: 5px;
 }
 button{
-    border-radius: 505px;
-    padding: 18px 16px;
-    border-width: 2px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
+    font-size: 24px;
+    border-radius: 4px;
+    padding: 0;
+    border-color: dimgrey;
+    border-width: 1px;
+}
+.numeros{
+    background-color: rgb(168, 168, 169);
+}
+.numeros:hover {
+    background-color:  rgba(168, 168, 169, 0.423);
+  }
+  
+.operacoes{
+    background-color: #013d22d2;
+    color: rgb(201, 201, 201);
+}
+.operacoes:hover{
+    background-color: #16593b4a;
+}
+#igual{
+    background-color: #013d22d2;
+    color: rgb(201, 201, 201);
+}
+
+.nada{
+    visibility: hidden;
+}body{
+    background-color: #013d22d2 ;
+    color:  rgb(216, 216, 216);
+    text-align: center;
+}
+#calculadora{
+    width: 270px;
+    height: 430px;
+    background-color: rgba(38, 46, 52, 0.83);
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+}
+#tela{
+    height: 120px;
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.83);
+    border-radius: 20px;
+    margin: 0 0 0 0;
+    text-align: right;
+    font-size: 50px;
+    overflow: hidden;
+    color:  rgb(201, 201, 201);
 
 }
+#botoes{
+    /* background-color: black; */
+    color: aliceblue;
+    padding-right: 0%;
+    padding-top: 35px;
+    text-align: center;
+}
+#tabela{
+    margin: auto;
+    text-align: center;
+}
+button{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 4px;
+    padding: 0;
+    border-color: dimgrey;
+    border-width: 1px;
+}
+.numeros{
+    background-color: rgb(168, 168, 169);
+}
+.numeros:hover {
+    background-color:  rgba(168, 168, 169, 0.423);
+  }
+  
+.operacoes{
+    background-color: #013d22d2;
+    color: rgb(201, 201, 201);
+}
+.operacoes:hover{
+    background-color: #16593b4a;
+}
+#igual{
+    background-color: #013d22d2;
+    color: rgb(201, 201, 201);
+}
+
 .nada{
     visibility: hidden;
 }

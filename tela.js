@@ -12,6 +12,8 @@ function atualizarDimensoes() {
     var a = window.document.getElementsByTagName('a')
     var section = window.document.getElementsByClassName('principal')
 
+    
+
 
     if (largura <= 650) {
         header.classList.add('pequeno')
@@ -36,3 +38,6 @@ function atualizarDimensoes() {
 
 // Chamar a funÃ§Ã£o quando a janela Ã© redimensionada
 window.addEventListener("resize", atualizarDimensoes);
+window.onload=function(){
+    atualizarDimensoes();
+}
